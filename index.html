@@ -86,6 +86,32 @@
       to { text-shadow: 0 0 30px rgba(255, 0, 0, 1), 0 0 60px rgba(255, 215, 0, 0.7); }
     }
 
+    .header-left {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      z-index: 1;
+    }
+
+    .back-button,
+    .github-button {
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      color: white;
+      background: #ff6b6b;
+    }
+
+    .github-button {
+      font-size: 0.9rem;
+      padding: 0.3rem 0.8rem;
+    }
+
     .nomination-container {
       max-width: 1200px;
       margin: 0 auto;
@@ -98,22 +124,21 @@
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 2rem;
       margin-bottom: 3rem;
-      justify-content: center; /* Центрируем содержимое сетки */
+      justify-content: center;
     }
 
     .nomination-card, .video-card, .medium-card, .highlight-video {
-  background-color: white; /* Белый фон для рамок */
-  border-radius: 15px;
-  padding: 2rem;
-  border: 2px solid white; /* Белая рамка */
-  box-shadow: 0 0 25px rgba(255, 255, 255, 0.5); /* Белая тень для выделения */
-  transition: all 0.3s ease;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
+      background-color: white;
+      border-radius: 15px;
+      padding: 2rem;
+      border: 2px solid white;
+      box-shadow: 0 0 25px rgba(255, 255, 255, 0.5);
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
 
     .nomination-card:hover {
       box-shadow: 0 0 40px rgba(255, 0, 0, 0.8);
@@ -170,21 +195,19 @@
       margin-bottom: 3rem;
     }
 
-   .medium-card {
-  background-color: white; /* Белый фон рамки */
-  border-radius: 15px;
-  padding: 2rem;
-  border: 2px solid white; /* Можно оставить белую границу, или убрать */
-  box-shadow: 0 0 30px rgba(255, 0, 0, 0.6); /* Это можно изменить или убрать по желанию */
-  height: 600px;
-  transition: all 0.3s ease;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-
+    .medium-card {
+      background-color: white;
+      border-radius: 15px;
+      padding: 2rem;
+      border: 2px solid white;
+      box-shadow: 0 0 30px rgba(255, 0, 0, 0.6);
+      height: 600px;
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
 
     .medium-card:hover {
       box-shadow: 0 0 45px rgba(255, 0, 0, 0.8);
@@ -192,13 +215,12 @@
     }
 
     .medium-card img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: cover;
-  border-radius: inherit;
-  display: block;
-}
-
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: cover;
+      border-radius: inherit;
+      display: block;
+    }
 
     .highlight-video {
       background: linear-gradient(135deg, rgba(139, 0, 0, 0.6), rgba(0, 0, 0, 0.9));
@@ -242,6 +264,11 @@
   <div class="spotlight"></div>
   <div class="spotlight"></div>
   <div class="spotlight"></div>
+
+  <div class="header-left">
+    <a href="https://jonibak2.github.io/pg78hub/" class="back-button">← Назад в хаб</a>
+    <a href="https://github.com/jonibak2" class="github-button">Мой GitHub</a>
+  </div>
 
   <h1>PG Awards 💥</h1>
   <div class="nomination-container">
