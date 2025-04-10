@@ -78,7 +78,7 @@
       animation: glow 2s ease-in-out infinite alternate;
       position: relative;
       z-index: 1;
-      color: #ffd700;
+      color: #ff0000;
     }
 
     @keyframes glow {
@@ -101,19 +101,19 @@
       justify-content: center; /* Центрируем содержимое сетки */
     }
 
-    .nomination-card {
-      background: linear-gradient(135deg, rgba(139, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
-      border-radius: 15px;
-      padding: 2rem;
-      border: 2px solid #ffd700;
-      box-shadow: 0 0 25px rgba(255, 0, 0, 0.6);
-      min-height: 400px;
-      transition: all 0.3s ease;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
+    .nomination-card, .video-card, .medium-card, .highlight-video {
+  background-color: white; /* Белый фон для рамок */
+  border-radius: 15px;
+  padding: 2rem;
+  border: 2px solid white; /* Белая рамка */
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.5); /* Белая тень для выделения */
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 
     .nomination-card:hover {
       box-shadow: 0 0 40px rgba(255, 0, 0, 0.8);
@@ -129,7 +129,7 @@
     .nomination-title {
       font-size: 1.8rem;
       font-weight: bold;
-      color: #ffd700;
+      color: #ff0000;
       text-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
       text-align: center;
       margin-bottom: 1rem;
@@ -139,7 +139,7 @@
       background: linear-gradient(135deg, rgba(139, 0, 0, 0.6), rgba(0, 0, 0, 0.9));
       border-radius: 20px;
       padding: 3rem;
-      border: 3px solid #ffd700;
+      border: 3px solid #ff0000;
       box-shadow: 0 0 40px rgba(255, 0, 0, 0.7);
       margin-bottom: 4rem;
     }
@@ -152,7 +152,7 @@
     }
 
     .video-card a {
-      color: #ffd700;
+      color: #ff0000;
       text-decoration: none;
       font-size: 1.5rem;
       display: block;
@@ -204,7 +204,7 @@
       background: linear-gradient(135deg, rgba(139, 0, 0, 0.6), rgba(0, 0, 0, 0.9));
       border-radius: 20px;
       padding: 3rem;
-      border: 3px solid #ffd700;
+      border: 3px solid #ff0000;
       box-shadow: 0 0 40px rgba(255, 0, 0, 0.7);
       margin-top: 4rem;
     }
@@ -217,7 +217,7 @@
     }
 
     .highlight-video a {
-      color: #ffd700;
+      color: #ff0000;
       text-decoration: none;
       font-size: 1.5rem;
       display: block;
@@ -231,7 +231,7 @@
     footer {
       margin-top: 5rem;
       font-size: 1.2rem;
-      color: #ffd700;
+      color: #ff0000;
       text-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
       position: relative;
       z-index: 1;
